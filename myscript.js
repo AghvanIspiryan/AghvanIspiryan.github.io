@@ -8,7 +8,19 @@ $(document).ready(function(){
         $(this).hide()
         $(this).siblings('img').show()
     })
-
+    $('.hide-this-1, .hide-this-2 ').hide()
+    $('.click-here').click(function(){
+      $('.hide-this').show()
+      $('.hide-this-1, .hide-this-2').hide()
+    })
+    $('.click-here-1').click(function(){
+      $('.hide-this-1').show()
+      $('.hide-this-2, .hide-this').hide()
+    })
+    $('.click-here-2').click(function(){
+      $('.hide-this-2').show()
+      $('.hide-this, .hide-this-1').hide()
+    })
     $('.change-lang').click(function(){
         var attr = $(this).attr('lang');
         if(attr == "Armenian"){
@@ -27,7 +39,7 @@ $(document).ready(function(){
             $(".title4").text("Страница")
             $(".title5").text("О нас")
             $(".title6").text("Звони нас")
-        }else{
+        }else{  
             $(".title").text("Home")
             $(".title1").text("Collection")
             $(".title2").text("Shop")
@@ -58,9 +70,7 @@ $(document).ready(function(){
           if(x >= y){ 
             $(this).addClass('active-sec') 
           }
-          // else{
-          //   $(this).removeClass('active-sec')
-          // }
+
           var a = $('.animate-top');
           if($(document).scrollTop() > 200){
             a.show()
@@ -97,7 +107,6 @@ $(document).ready(function(){
       $('.click-btn').click(function(){
         $('.click-btn').removeClass('active-btn')
         $(this).addClass('active-btn')
-
       })
 
 })

@@ -69,9 +69,7 @@
                     </div>
                   </nav>
                 </div>
-                <!-- <div class="col-lg-3">
-                  <img src="css/img/logo.png" alt="" id="logo-image">
-                </div> -->
+
                 <div class="col-sm">
                   <div class="icon-text">
                     <i class="fa-sharp fa-solid fa-cart-shopping"></i><span class="dotted">:</span>
@@ -188,7 +186,7 @@
                     <h4 class="text-light nav-head">
                         Check-point
                     </h4>
-                   <span class="text-secondary">Home / <span class="text-light active-span nav-head">Check-point</span></span>
+                   <span class="text-secondary"><a href="index.html" class="text-secondary">Home</a> / <span class="text-light active-span nav-head">Check-point</span></span>
                 </div>
             </div>
           </div>
@@ -313,18 +311,39 @@
             </ul>
            <div class="container">
             <div class="d-flex" style="border-bottom: 2px solid white;">
-              <button class="click-btn active-btn">OverView</button>
-              <button class="click-btn">Reviews (1)</button>
-              <button class="click-btn">Solution</button>
+              <button class="click-btn active-btn click-here">OverView</button>
+              <button class="click-btn click-here-1">Reviews (1)</button>
+              <button class="click-btn click-here-2">Solution</button>
             </div>
             <div class="text-cont pt-3">
-              <p class="text-secondary " id="hide-this">
+              <p class="text-secondary hide-this">
                 CLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis malesuada mi id tristique. Sed ipsum nisi, dapibus at faucibus non, dictum a diam. Nunc vitae interdum diam. Sed finibus, justo vel maximus facilisis, sapien turpis euismod tellus, vulputate semper diam ipsum vel tellus.
               </p>
+              <div class="row g-3 hide-this-1">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label text-secondary">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+                </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-dark">SEND</button>
+                  </div>
+              </div>
+              <p class="text-secondary hide-this-2" id="solution">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto in adipisci temporibus autem, illo voluptatibus unde eaque soluta repudiandae inventore iste dolorum modi rerum perspiciatis hic consectetur. Repellat, vero facilis.</p>
             </div>
            </div>
 
-            <div class="d-block">
+            <div class="d-block pt-5">
               <h3 class="text-light" style=" border-bottom: 2px solid gray;">Related Products</h3>
               <div id="carouselExample1" class="carousel slide">
                 <div class="carousel-inner">
@@ -620,7 +639,7 @@
 
     <footer>
         <div class="container pt-5">
-          <div class="row justify-content-center">
+          <div class="row justify-content-between">
             <div class="col-md-6 pb-3">
               <h3 class="text-light">
                 FOLLOW OUR UPDATES !
@@ -637,7 +656,7 @@
             </div>
             
           </div>
-          <div class="row justify-content-center px-5 mx-1">
+          <div class="row justify-content-around">
             <div class="col pt-5">
            <div class="d-flex">
             <h4 class="text-light">

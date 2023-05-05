@@ -16,7 +16,7 @@ header #first-nav{
     font-size: 20px;
     position: fixed;
     right: 10px;
-    top: 600px;
+    top: 800px;
     color: white;
     background-color: #f44336;
     padding: 10px 15px;
@@ -24,6 +24,8 @@ header #first-nav{
     border: none;
     z-index: 999;
 }
+
+
 .section{
     opacity: 0;
     transition: .5s all;
@@ -160,6 +162,7 @@ header .row{
 .disappeard{
     font-size: 15px ;
 }
+
 #logo-image{
     width: 200px;
 }
@@ -451,10 +454,14 @@ header .row{
     color: #f44336 !important;
 }
 .section-4{
-    height: 60vh;
+    height: auto;
     background-color: black;
     padding-top: 120px;
+    padding-bottom: 40px;
 }
+
+
+
 @media screen and (max-width:770px) {
    .section-4{
     padding-top: 100px;
@@ -900,6 +907,9 @@ footer ul li a:hover{
             padding-left: 0 !important;
         }
     }
+    #hire{
+        margin-left: 16px;
+    }
     #mainImg{
         height: 500px ;
         width: 400px ;
@@ -991,9 +1001,7 @@ footer ul li a:hover{
         border: none;
         color: white;
     }
-    .active-text{
-        display: block;
-    }
+
     .location{
         color: white !important;
         font-size: 20px;
